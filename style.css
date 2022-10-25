@@ -21,10 +21,33 @@
     z-index: 2;
 }
 
-.menu {
-    
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
 }
 
-li img{
+.toggle {
+    position: relative;
+    width: 60x;
+    height: 60px;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ion-icon {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.social img {
     width: 40px;
 }
