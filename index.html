@@ -8,10 +8,10 @@
     <title>Travel Landing Page</title>
 </head>
 <body>
-    <section class="showcase active">
+    <section class="showcase">
         <header>
             <h2 class="logo">Travel</h2>
-            <div class="toggle active"></div>      
+            <div class="toggle"></div>  <!--toggle irá ativar foto para fechar ou abrir barra de menu-->
         </header>
 
       <video src="pexels_explore.mp4" muted loop autoplay></video>
@@ -41,7 +41,14 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
